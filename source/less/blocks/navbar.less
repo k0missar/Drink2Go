@@ -4,14 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60px auto;
-  //grid-template-areas:
-    //"logo user-menu"
-    //"main-menu main-menu";
 
   @media (min-width: @width-tablet) {
     grid-template-columns: max-content 1fr max-content;
     grid-template-rows: 80px auto;
-    //grid-template-areas: "logo main-menu user-menu";
   }
 
   @media (min-width: @width-desktop) {
@@ -20,7 +16,6 @@
 
 .navbar__logo {
   margin-left: 20px;
-  //grid-area: logo;
   align-self: center;
 }
 
@@ -64,7 +59,7 @@
   @media (min-width: @width-desktop) {
     width: 126px;
     margin-left: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -72,3 +67,28 @@
     color: @color-base-black;
   }
 }
+
+.navbar__main-menu {
+  &--close {
+    display: none;
+  }
+
+  &--opne {
+    display: block;
+  }
+}
+
+.navbar__button-main-menu {
+    content: "";
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    top: 24px;
+    right: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' fill='none' viewBox='0 0 16 12' id='menu'%3E%3Cpath fill='%23333' fill-rule='evenodd' d='M0 0h16v1.5H0V0Zm0 5.25h16v1.5H0v-1.5Zm16 5.25H0V12h16v-1.5Z' clip-rule='evenodd' /%3E%3C/svg%3E");
+    border: none;
+
+    @media (min-width: @width-tablet) {
+      display: none;
+    }
+  }

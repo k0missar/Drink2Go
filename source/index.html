@@ -54,18 +54,211 @@
           <ul class="navbar__user-menu user-menu">
             <li class="user-menu__item">
               <a href="#" class="user-menu__link"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="user-menu__icon"><use xlink:href="#user"></svg> <span class="user-menu__text">Войти</span></a
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  class="user-menu__icon"
+                >
+                  <use xlink:href="#user" />
+                </svg>
+                <span class="user-menu__text">Войти</span></a
               >
             </li>
             <li class="user-menu__item">
               <a href="#" class="user-menu__link"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="user-menu__icon"><use xlink:href="#union"></svg> <span class="user-menu__text">Корзина</span></a
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  class="user-menu__icon"
+                >
+                  <use xlink:href="#union" />
+                </svg>
+                <span class="user-menu__text">Корзина</span></a
               >
             </li>
           </ul>
+          <button type="button" class="navbar__button-main-menu" onclick="openCloseMenu()"></button>
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="slider">
+        <h2 class="visually-hidden">Слайдер товаров</h2>
+        <div class="wrapper">
+          <div class="slider__content">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <div class="slider__image">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/flat_white_desktop_img.webp,
+                        img/flat_white_desktop_img@2x.webp 2x,
+                        img/flat_white_desktop_img.png,
+                        img/flat_white_desktop_img@2x.png  2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/flat_white_tablet_img.webp,
+                        img/flat_white_tablet_img@2x.webp 2x,
+                        img/flat_white_tablet_img.png,
+                        img/flat_white_tablet_img@2x.png  2x
+                      "
+                    />
+                    <img
+                      class="slider__image-source"
+                      srcset="
+                        img/flat_white_mobile_img.webp,
+                        img/flat_white_mobile_img@2x.webp 2x,
+                        img/flat_white_mobile_img.png,
+                        img/flat_white_mobile_img@2x.png  2x
+                      "
+                      src="img/flat_white_mobile_img.png"
+                      width="280"
+                      height="280"
+                      alt="Декаф Флэт Уайт"
+                    />
+                  </picture>
+                </div>
+                <div class="slider__content">
+                  <p class="slider__nova">Новинка</p>
+                  <h2 class="slider__title">Декаф Флэт Уайт</h2>
+                  <p>
+                    Свежесваренный кофе без кофеина из Эфиопии с натуральным
+                    фермерским молоком - то, что нужно для расслабления после
+                    тяжёлого рабочего дня
+                  </p>
+                  <div class="slider__footer">
+                    <p class="slider__old-price">295 р</p>
+                    <p class="slider__new-price price">225 р</p>
+                    <button class="button">Заказать</button>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hide">
+                <div class="slider__image">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/lavender_desktop_img.webp,
+                        img/lavender_desktop_img@2x.webp 2x,
+                        img/lavender_desktop_img.png,
+                        img/lavender_desktop_img@2x.png  2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/lavender_tablet_img.webp,
+                        img/lavender_tablet_img@2x.webp 2x,
+                        img/lavender_tablet_img.png,
+                        img/lavender_tablet_img@2x.png  2x
+                      "
+                    />
+                    <img
+                      class="slider__image-source"
+                      srcset="
+                        img/lavender_mobile_img.webp,
+                        img/lavender_mobile_img@2x.webp 2x,
+                        img/lavender_mobile_img.png,
+                        img/lavender_mobile_img@2x.png  2x
+                      "
+                      src="img/lavender_mobile_img.png"
+                      width="280"
+                      height="280"
+                      alt="Лавандовый Латте"
+                    />
+                  </picture>
+                </div>
+                <div class="slider__content">
+                  <p class="slider__nova">Новинка</p>
+                  <h2 class="slider__title">Лавандовый Латте</h2>
+                  <p>
+                    Невероятное сочетание перуанской высокогорной арабики с
+                    молоком ламы и лавандовым сиропом унесёт вас прямо на
+                    вершину Радужных гор
+                  </p>
+                  <div class="slider__footer">
+                    <p class="slider__old-price">285 р</p>
+                    <p class="slider__new-price price">265 р</p>
+                    <button class="button">Заказать</button>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item slider__item--hide">
+                <div class="slider__image">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/espresso_desktop_img.webp,
+                        img/espresso_desktop_img@2x.webp 2x,
+                        img/espresso_desktop_img.png,
+                        img/espresso_desktop_img@2x.png  2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/espresso_tablet_img.webp,
+                        img/espresso_tablet_img@2x.webp 2x,
+                        img/espresso_tablet_img.png,
+                        img/espresso_tablet_img@2x.png  2x
+                      "
+                    />
+                    <img
+                      class="slider__image-source"
+                      srcset="
+                        img/espresso_mobile_img.webp,
+                        img/espresso_mobile_img@2x.webp 2x,
+                        img/espresso_mobile_img.png,
+                        img/espresso_mobile_img@2x.png  2x
+                      "
+                      src="img/espresso_mobile_img.png"
+                      width="280"
+                      height="280"
+                      alt="Тройной Эспрессо"
+                    />
+                  </picture>
+                </div>
+                <div class="slider__content">
+                  <p class="slider__nova">Новинка</p>
+                  <h2 class="slider__title">Тройной Эспрессо</h2>
+                  <p>
+                    Мощнее укола адреналина, чернее самой тёмной ночи, этот
+                    тройной эспрессо из Колумбии покажет вам, что такое
+                    настоящая бодрость
+                  </p>
+                  <div class="slider__footer">
+                    <p class="slider__old-price">295 р</p>
+                    <p class="slider__new-price price">225 р</p>
+                    <button class="button">Заказать</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="slider__control">
+              <button
+                type="button"
+                class="slider__control-left"
+                onclick="slid(event)"
+              ></button>
+              <button
+                type="button"
+                class="slider__control-right"
+                onclick="slid(event)"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <svg>
       <symbol

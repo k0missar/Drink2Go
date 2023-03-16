@@ -7,7 +7,7 @@ import postUrl from 'postcss-url';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import terser from 'gulp-terser';
-// import squoosh from 'gulp-libsquoosh';
+import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import { stacksvg } from "gulp-stacksvg";
 import { deleteAsync } from 'del';
@@ -122,8 +122,8 @@ function compileProject (done) {
     optimizeVector,
     createStack,
     copyAssets,
-    // optimizeImages,
-    // createWebp
+    optimizeImages,
+    createWebp
   )(done);
 }
 
