@@ -88,6 +88,17 @@ img {
   line-height: 32px;
   color: #333333;
 }
+.label {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7859cf;
+}
 .header {
   background-color: #ffffff;
 }
@@ -436,21 +447,12 @@ img {
     padding-left: 20px;
   }
 }
-.slider__nova {
+.slider__label {
   margin-top: 0;
   margin-bottom: 4px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #7859cf;
 }
 @media (min-width: 1440px) {
-  .slider__nova {
+  .slider__label {
     margin-bottom: 4px;
     text-align: left;
   }
@@ -585,7 +587,7 @@ img {
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 50px;
+    bottom: 70px;
     display: flex;
     justify-content: center;
     column-gap: 8px;
@@ -597,7 +599,162 @@ img {
   background-color: #ffffff;
   border: none;
 }
-.slider__control-button--current {
+.slider__control-button:hover,
+.slider__control-button:focus {
+  background-color: rgba(120, 89, 207, 0.25);
+}
+.slider__control-button:active {
   background-color: #7859cf;
+}
+.advantages {
+  padding-top: 37px;
+}
+@media (min-width: 768px) {
+  .advantages {
+    padding-top: 236px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages {
+    padding-top: 88px;
+  }
+}
+.advantages__label {
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .advantages__label {
+    margin-bottom: 4px;
+  }
+}
+.advantages__title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+@media (min-width: 768px) {
+  .advantages__title {
+    margin-bottom: 60px;
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__title {
+    margin-bottom: 80px;
+  }
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .advantages__list {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 50px 9px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__list {
+    padding: 0 40px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 29px;
+  }
+}
+.advantages__item {
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+@media (min-width: 768px) {
+  .advantages__item {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__item {
+    grid-template-columns: auto;
+    row-gap: 14px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .advantages__image {
+    padding: 0 10px;
+  }
+}
+.advantages__content {
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  .advantages__content {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__content {
+    padding-left: 0;
+  }
+}
+.advantages__content-title {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+}
+@media (min-width: 768px) {
+  .advantages__content-title {
+    margin-bottom: 11px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__content-title {
+    text-align: center;
+  }
+}
+.advantages__content-text {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .advantages__content-text {
+    width: 267px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__content-text {
+    width: 318px;
+  }
 }
 /*# sourceMappingURL=./style.css.map */
