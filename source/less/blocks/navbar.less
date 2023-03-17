@@ -1,5 +1,6 @@
 .navbar {
   min-width: 320px;
+  padding-left: 20px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -11,11 +12,12 @@
   }
 
   @media (min-width: @width-desktop) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 .navbar__logo {
-  margin-left: 20px;
   align-self: center;
 }
 
@@ -53,12 +55,18 @@
   }
 }
 
+.navbar__logo-link {
+  display: flex;
+  text-decoration: none;
+}
+
 .navbar__logo-text {
   display: none;
 
   @media (min-width: @width-desktop) {
     width: 126px;
     margin-left: 20px;
+    display: block;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -71,24 +79,43 @@
 .navbar__main-menu {
   &--close {
     display: none;
-  }
 
-  &--opne {
-    display: block;
+    @media (min-width: @width-tablet) {
+      display: flex;
+    }
   }
 }
 
 .navbar__button-main-menu {
     content: "";
-    width: 16px;
-    height: 12px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: 24px;
-    right: 22px;
+    top: 0;
+    right: 0;
+    background-color: @color-base-white;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' fill='none' viewBox='0 0 16 12' id='menu'%3E%3Cpath fill='%23333' fill-rule='evenodd' d='M0 0h16v1.5H0V0Zm0 5.25h16v1.5H0v-1.5Zm16 5.25H0V12h16v-1.5Z' clip-rule='evenodd' /%3E%3C/svg%3E");
+    background-size: 16px 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
     border: none;
 
     @media (min-width: @width-tablet) {
       display: none;
+    }
+
+    &:active {
+      background-color: @color-base-secondary;
+    }
+
+    &--close {
+      width: 60px;
+      height: 60px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none'%3E%3Cpath fill='%23333' fill-rule='evenodd' d='M5.03 6 0 .97.97 0 6 5.03 11.03 0l.97.97L6.97 6 12 11.03l-.97.97L6 6.97.97 12 0 11.03 5.03 6Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+
+      @media (min-width: @width-tablet) {
+        display: none;
+      }
     }
   }

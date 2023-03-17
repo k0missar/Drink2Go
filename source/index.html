@@ -11,75 +11,77 @@
       <div class="wrapper">
         <div class="navbar">
           <div class="navbar__logo">
-            <svg
-              class="navbar__logo-mobile"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="36"
-            >
-              <use xlink:href="#logo-mobile" />
-            </svg>
-            <svg
-              class="navbar__logo-tablet"
-              xmlns="http://www.w3.org/2000/svg"
-              width="82"
-              height="36"
-            >
-              <use xlink:href="#logo-tablet" />
-            </svg>
-            <svg
-              class="navbar__logo-desktop"
-              xmlns="http://www.w3.org/2000/svg"
-              width="170"
-              height="36"
-            >
-              <use xlink:href="#logo-desktop" />
-            </svg>
-            <p class="navbar__logo-text">Интернет-магазин кофейных напитков</p>
+            <a href="#" class="navbar__logo-link">
+              <svg
+                class="navbar__logo-mobile"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="36"
+              >
+                <use xlink:href="#logo-mobile" />
+              </svg>
+              <svg
+                class="navbar__logo-tablet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="82"
+                height="36"
+              >
+                <use xlink:href="#logo-tablet" />
+              </svg>
+              <svg
+                class="navbar__logo-desktop"
+                xmlns="http://www.w3.org/2000/svg"
+                width="170"
+                height="36"
+              >
+                <use xlink:href="#logo-desktop" />
+              </svg>
+              <span class="navbar__logo-text"
+                >Интернет-магазин кофейных напитков</span
+              >
+            </a>
           </div>
           <ul class="navbar__main-menu main-menu">
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Главная</a>
+            <li class="main-menu__item main-menu__item--current">
+              <a
+                href="#"
+                class="main-menu__item-link main-menu__item-link--current"
+                >Главная</a
+              >
             </li>
             <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Каталог</a>
+              <a href="#" class="main-menu__item-link">Каталог</a>
             </li>
             <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Доставка</a>
+              <a href="#" class="main-menu__item-link">Доставка</a>
             </li>
             <li class="main-menu__item">
-              <a href="#" class="main-menu__link">О нас</a>
+              <a href="#" class="main-menu__item-link">О нас</a>
             </li>
           </ul>
           <ul class="navbar__user-menu user-menu">
             <li class="user-menu__item">
               <a href="#" class="user-menu__link"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  class="user-menu__icon"
-                >
-                  <use xlink:href="#user" />
+                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <use class="user-menu__icon" xlink:href="#user" />
                 </svg>
                 <span class="user-menu__text">Войти</span></a
               >
             </li>
             <li class="user-menu__item">
               <a href="#" class="user-menu__link"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  class="user-menu__icon"
-                >
-                  <use xlink:href="#union" />
+                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <use class="user-menu__icon" xlink:href="#union" />
                 </svg>
                 <span class="user-menu__text">Корзина</span></a
               >
             </li>
           </ul>
-          <button type="button" class="navbar__button-main-menu" onclick="openCloseMenu()"></button>
+          <button
+            type="button"
+            class="navbar__button-main-menu"
+            onclick="openCloseMenu()"
+          ></button>
         </div>
       </div>
     </header>
@@ -125,17 +127,17 @@
                     />
                   </picture>
                 </div>
-                <div class="slider__content">
-                  <p class="slider__nova">Новинка</p>
+                <div class="slider__info">
+                  <p class="slider__nova">Новинка!</p>
                   <h2 class="slider__title">Декаф Флэт Уайт</h2>
-                  <p>
+                  <p class="slider__text">
                     Свежесваренный кофе без кофеина из Эфиопии с натуральным
-                    фермерским молоком - то, что нужно для расслабления после
-                    тяжёлого рабочего дня
+                    фермерским молоком &#8212; то, что нужно для расслабления
+                    после тяжёлого рабочего дня
                   </p>
                   <div class="slider__footer">
-                    <p class="slider__old-price">295 р</p>
-                    <p class="slider__new-price price">225 р</p>
+                    <p class="slider__old-price">295&#8381;</p>
+                    <p class="slider__new-price price">225&#8381;</p>
                     <button class="button">Заказать</button>
                   </div>
                 </div>
@@ -176,17 +178,17 @@
                     />
                   </picture>
                 </div>
-                <div class="slider__content">
-                  <p class="slider__nova">Новинка</p>
+                <div class="slider__info">
+                  <p class="slider__nova">Новинка!</p>
                   <h2 class="slider__title">Лавандовый Латте</h2>
-                  <p>
+                  <p class="slider__text">
                     Невероятное сочетание перуанской высокогорной арабики с
                     молоком ламы и лавандовым сиропом унесёт вас прямо на
                     вершину Радужных гор
                   </p>
                   <div class="slider__footer">
-                    <p class="slider__old-price">285 р</p>
-                    <p class="slider__new-price price">265 р</p>
+                    <p class="slider__old-price">285&#8381;</p>
+                    <p class="slider__new-price price">265&#8381;</p>
                     <button class="button">Заказать</button>
                   </div>
                 </div>
@@ -227,17 +229,17 @@
                     />
                   </picture>
                 </div>
-                <div class="slider__content">
-                  <p class="slider__nova">Новинка</p>
+                <div class="slider__info">
+                  <p class="slider__nova">Новинка!</p>
                   <h2 class="slider__title">Тройной Эспрессо</h2>
-                  <p>
+                  <p class="slider__text">
                     Мощнее укола адреналина, чернее самой тёмной ночи, этот
                     тройной эспрессо из Колумбии покажет вам, что такое
                     настоящая бодрость
                   </p>
                   <div class="slider__footer">
-                    <p class="slider__old-price">295 р</p>
-                    <p class="slider__new-price price">225 р</p>
+                    <p class="slider__old-price">295&#8381;</p>
+                    <p class="slider__new-price price">225&#8381;</p>
                     <button class="button">Заказать</button>
                   </div>
                 </div>
@@ -247,13 +249,18 @@
               <button
                 type="button"
                 class="slider__control-left"
-                onclick="slid(event)"
+                onclick="handlerSlider(event)"
               ></button>
               <button
                 type="button"
                 class="slider__control-right"
-                onclick="slid(event)"
+                onclick="handlerSlider(event)"
               ></button>
+              <div class="slider__control-desktop">
+                <button type="button" class="slider__control-button" onclick="handlerSliderDesktop(event)"></button>
+                <button type="button" class="slider__control-button" onclick="handlerSliderDesktop(event)"></button>
+                <button type="button" class="slider__control-button" onclick="handlerSliderDesktop(event)"></button>
+              </div>
             </div>
           </div>
         </div>
