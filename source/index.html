@@ -281,7 +281,9 @@
       <section class="advantages">
         <div class="wrapper">
           <p class="advantages__label label">Преимущества</p>
-          <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
+          <h2 class="advantages__title title">
+            Главные причины выбрать Drink2Go
+          </h2>
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__image">
@@ -290,8 +292,10 @@
                 </svg>
               </div>
               <div class="advantages__content">
-                <h3 class="advantages__content-title">Скорость</h3>
-                <p class="advantages__content-text">Готовый напиток всегда под рукой — просто открой банку</p>
+                <h3 class="advantages__content-title subtitle">Скорость</h3>
+                <p class="advantages__content-text">
+                  Готовый напиток всегда под рукой — просто открой банку
+                </p>
               </div>
             </li>
             <li class="advantages__item">
@@ -301,8 +305,10 @@
                 </svg>
               </div>
               <div class="advantages__content">
-                <h3 class="advantages__content-title">Удобство</h3>
-                <p class="advantages__content-text">Легко помещается и в карман, и в маленькую сумочку</p>
+                <h3 class="advantages__content-title subtitle">Удобство</h3>
+                <p class="advantages__content-text">
+                  Легко помещается и в карман, и в маленькую сумочку
+                </p>
               </div>
             </li>
             <li class="advantages__item">
@@ -312,8 +318,10 @@
                 </svg>
               </div>
               <div class="advantages__content">
-                <h3 class="advantages__content-title">Бодрость</h3>
-                <p class="advantages__content-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+                <h3 class="advantages__content-title subtitle">Бодрость</h3>
+                <p class="advantages__content-text">
+                  Сбалансированная доза кофеина даст мощный заряд энергии
+                </p>
               </div>
             </li>
             <li class="advantages__item">
@@ -323,11 +331,126 @@
                 </svg>
               </div>
               <div class="advantages__content">
-                <h3 class="advantages__content-title">Экологичность</h3>
-                <p class="advantages__content-text">Вся упаковка сделана из перерабатываемых материалов</p>
+                <h3 class="advantages__content-title subtitle">
+                  Экологичность
+                </h3>
+                <p class="advantages__content-text">
+                  Вся упаковка сделана из перерабатываемых материалов
+                </p>
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="wrapper">
+          <p class="catalog__label label">Каталог</p>
+          <h2 class="catalog__title title">Каталог кофейных напитков</h2>
+          <div class="catalog__content">
+            <form action="#" method="get" class="catalog__filter">
+              <div class="catalog__filter-price">
+                <label for="filter-price">Цена</label>
+                <div>ползунок</div>
+                <div>
+                  <input type="number" placeholder="0" />
+                  <input type="number" value="900" />
+                </div>
+              </div>
+              <div class="catalog__filter-milk">
+                <p>Наличие молока</p>
+                <div class="doesn-matter">
+                  <input
+                    type="radio"
+                    id="doesn-matter"
+                    name="filter-milk"
+                    value="doesn-matter"
+                    checked
+                  />
+                  <label for="doesn-matter">Неважно</label>
+                </div>
+                <div class="animal">
+                  <input
+                    type="radio"
+                    id="animal"
+                    name="filter-milk"
+                    value="animal"
+                  />
+                  <label for="animal">Только животное</label>
+                </div>
+                <div class="vegetable">
+                  <input
+                    type="radio"
+                    id="vegetable"
+                    name="filter-milk"
+                    value="vegetable"
+                  />
+                  <label for="vegetable">Только растительное</label>
+                </div>
+                <div class="without-milk">
+                  <input
+                    type="radio"
+                    id="without-milk"
+                    name="filter-milk"
+                    value="without-milk"
+                    disabled
+                  />
+                  <label for="without-milk">Без молока</label>
+                </div>
+              </div>
+              <div class="country-growth">
+                <div class="brasil">
+                  <input
+                    type="checkbox"
+                    id="brasil"
+                    name="brasil"
+                    value="brasil"
+                    checked
+                  />
+                  <label for="brasil">Бразилия</label>
+                </div>
+                <div class="ethiopia">
+                  <input
+                    type="checkbox"
+                    id="ethiopia"
+                    name="ethiopia"
+                    value="ethiopia"
+                  />
+                  <label for="ethiopia">Эфиопия</label>
+                </div>
+                <div class="colombia">
+                  <input
+                    type="checkbox"
+                    id="colombia"
+                    name="colombia"
+                    value="colombia"
+                  />
+                  <label for="colombia">Колумбия</label>
+                </div>
+                <div class="costa-rica">
+                  <input
+                    type="checkbox"
+                    id="costa-rica"
+                    name="costa-rica"
+                    value="costa-rica"
+                  />
+                  <label for="costa-rica">Коста-Рика</label>
+                </div>
+                <div class="peru">
+                  <input
+                    type="checkbox"
+                    id="peru"
+                    name="peru"
+                    value="peru"
+                    disabled
+                  />
+                  <label for="peru">Перу</label>
+                </div>
+              </div>
+              <button type="submit">Применить фильтр</button>
+              <button type="reset">Сбросить фильтр</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
