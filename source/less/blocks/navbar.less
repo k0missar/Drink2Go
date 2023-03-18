@@ -1,14 +1,16 @@
 .navbar {
   min-width: 320px;
-  padding-left: 20px;
+  //padding-left: 20px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60px auto;
 
   @media (min-width: @width-tablet) {
+    padding-left: 20px;
     grid-template-columns: max-content 1fr max-content;
     grid-template-rows: 80px auto;
+
   }
 
   @media (min-width: @width-desktop) {
@@ -22,6 +24,7 @@
 }
 
 .navbar__logo-mobile {
+  margin-left: 20px;
   @media (min-width: @width-tablet) {
     display: none;
   }
