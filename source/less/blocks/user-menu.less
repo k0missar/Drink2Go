@@ -58,6 +58,18 @@
   }
 }
 
+.user-menu__icon {
+  fill: @color-base-black;
+}
+
+.user-menu__link:hover .user-menu__icon,
+.user-menu__link:focus .user-menu__icon,
+.user-menu__link:active .user-menu__icon {
+  @media (min-width: @width-desktop) {
+    fill: @color-base-primary;
+  }
+}
+
 .user-menu__text {
   display: none;
 

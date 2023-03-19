@@ -40,6 +40,10 @@
 
 .footer__logo-link {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .footer__logo-mobile {
@@ -234,6 +238,17 @@
   }
 }
 
+.footer__contact-link {
+  &:hover, &:focus {
+    color: @color-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    color: @color-primary-darker;
+  }
+}
+
 // НАЧИНАЮТСЯ КОПИРАЙТЫ
 .footer__developer {
   padding-top: 19px;
@@ -276,6 +291,7 @@
 }
 
 .footer__developer-link svg {
+  padding-left: 4px;
   fill: @color-base-grey;
 }
 

@@ -18,7 +18,22 @@
     background-color: @color-lightest-grey;
   }
 
-  &:focus {
+  &:hover, &:focus {
+    font-weight: 400;
+    background-color: @color-primary-lighter;
+    color: @color-base-white;
     outline: none;
+  }
+
+  &:active {
+    font-weight: 400;
+    background-color: @color-primary-darker;
+    color: @color-base-white;
+  }
+
+  &:disabled {
+    font-weight: 400;
+    background-color: @color-light-grey;
+    color: @color-base-white;
   }
 }
