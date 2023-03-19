@@ -66,7 +66,7 @@
   @media (min-width: @width-desktop) {
     padding-top: 10px;
     display: block;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Verdana", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -133,7 +133,7 @@
   margin: 0;
   padding: 0;
   padding-top: 2px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -179,7 +179,7 @@
 }
 
 .footer__menu-link {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -203,7 +203,7 @@
 .footer__list-text {
   padding-left: 19px;
   position: relative;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -239,7 +239,8 @@
 }
 
 .footer__contact-link {
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: @color-primary-lighter;
     outline: none;
   }
@@ -271,7 +272,7 @@
 .footer__developer-link {
   display: flex;
   align-items: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -298,8 +299,4 @@
 .footer__developer-link:hover svg,
 .footer__developer-link:focus svg {
   fill: @color-base-primary;
-}
-
-.footer__developer-link:active {
-  fill: @color-primary-darker;
 }
