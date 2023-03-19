@@ -14,14 +14,16 @@
             <a
               href="#"
               class="navbar__logo-link"
-              title="Логотип интернет-магазина"
-              aria-label="Логотип интернет-магазина"
+              title="Логотип интернет-магазина."
+              aria-label="Логотип интернет-магазина."
             >
               <svg
                 class="navbar__logo-mobile"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="36"
+                role="img"
+                aria-label="Логотип интернет-магазина."
               >
                 <use xlink:href="#logo-mobile" />
               </svg>
@@ -30,6 +32,8 @@
                 xmlns="http://www.w3.org/2000/svg"
                 width="82"
                 height="36"
+                role="img"
+                aria-label="Логотип интернет-магазина."
               >
                 <use xlink:href="#logo-tablet" />
               </svg>
@@ -38,6 +42,8 @@
                 xmlns="http://www.w3.org/2000/svg"
                 width="170"
                 height="36"
+                role="img"
+                aria-label="Логотип интернет-магазина."
               >
                 <use xlink:href="#logo-desktop" />
               </svg>
@@ -66,16 +72,28 @@
           </ul>
           <ul class="navbar__user-menu user-menu">
             <li class="user-menu__item">
-              <a href="#" class="user-menu__link"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+              <a href="#" class="user-menu__link" title="Войти."
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  role="img"
+                  aria-label="Войти."
+                >
                   <use class="user-menu__icon" xlink:href="#user" />
                 </svg>
                 <span class="user-menu__text">Войти</span></a
               >
             </li>
             <li class="user-menu__item">
-              <a href="#" class="user-menu__link"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+              <a href="#" class="user-menu__link" title="Корзина."
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  role="img"
+                  aria-label="Корзина."
+                >
                   <use class="user-menu__icon" xlink:href="#union" />
                 </svg>
                 <span class="user-menu__text">Корзина</span></a
@@ -350,7 +368,13 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__image">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="56"
+                  role="img"
+                  aria-hidden="true"
+                >
                   <use xlink:href="#speed" />
                 </svg>
               </div>
@@ -363,7 +387,13 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__image">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="56"
+                  role="img"
+                  aria-hidden="true"
+                >
                   <use xlink:href="#convenience" />
                 </svg>
               </div>
@@ -376,7 +406,13 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__image">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="56"
+                  role="img"
+                  aria-hidden="true"
+                >
                   <use xlink:href="#vigor" />
                 </svg>
               </div>
@@ -389,7 +425,13 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__image">
-                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="56"
+                  role="img"
+                  aria-hidden="true"
+                >
                   <use xlink:href="#eco" />
                 </svg>
               </div>
@@ -616,31 +658,33 @@
               <ul class="catalog__product-list">
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
-                    <picture>
-                      <source
-                        srcset="
-                          img/catalog/coffee-can-1.webp    1x,
-                          img/catalog/coffee-can-1@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        srcset="
-                          img/catalog/coffee-can-1.png    1x,
-                          img/catalog/coffee-can-1@2x.png 2x
-                        "
-                        src="img/catalog/coffee-can-1.png"
-                        alt="Декаф Флэт Уайт"
-                        width="130"
-                        height="188"
-                        loading="lazy"
-                        class="catalog__product-image"
-                      />
-                    </picture>
+                    <a href="#" title="Декаф Флэт Уайт.">
+                      <picture>
+                        <source
+                          srcset="
+                            img/catalog/coffee-can-1.webp    1x,
+                            img/catalog/coffee-can-1@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          srcset="
+                            img/catalog/coffee-can-1.png    1x,
+                            img/catalog/coffee-can-1@2x.png 2x
+                          "
+                          src="img/catalog/coffee-can-1.png"
+                          alt=""
+                          width="130"
+                          height="188"
+                          loading="lazy"
+                          class="catalog__product-image"
+                        />
+                      </picture>
+                    </a>
                   </header>
                   <article class="catalog__product-article">
                     <h3 class="catalog__product-title subtitle">
-                      Декаф Флэт Уайт
+                      <a href="#" title="Декаф Флэт Уайт.">Декаф Флэт Уайт</a>
                     </h3>
                     <p class="catalog__product-text">
                       Кофе без кофеина из Эфиопии с натуральным фермерским
@@ -658,6 +702,8 @@
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="16"
+                        role="img"
+                        aria-hidden="true"
                       >
                         <use xlink:href="#union-button" />
                       </svg>
@@ -667,31 +713,33 @@
                 </li>
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
-                    <picture>
-                      <source
-                        srcset="
-                          img/catalog/coffee-can-2.webp    1x,
-                          img/catalog/coffee-can-2@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        srcset="
-                          img/catalog/coffee-can-2.png    1x,
-                          img/catalog/coffee-can-2@2x.png 2x
-                        "
-                        src="img/catalog/coffee-can-2.png"
-                        alt="Декаф Флэт Уайт"
-                        width="130"
-                        height="180"
-                        loading="lazy"
-                        class="catalog__product-image"
-                      />
-                    </picture>
+                    <a href="#" title="Декаф Флэт Уайт.">
+                      <picture>
+                        <source
+                          srcset="
+                            img/catalog/coffee-can-2.webp    1x,
+                            img/catalog/coffee-can-2@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          srcset="
+                            img/catalog/coffee-can-2.png    1x,
+                            img/catalog/coffee-can-2@2x.png 2x
+                          "
+                          src="img/catalog/coffee-can-2.png"
+                          alt=""
+                          width="130"
+                          height="180"
+                          loading="lazy"
+                          class="catalog__product-image"
+                        />
+                      </picture>
+                    </a>
                   </header>
                   <article class="catalog__product-article">
                     <h3 class="catalog__product-title subtitle">
-                      Декаф Флэт Уайт
+                      <a href="#" title="Декаф Флэт Уайт.">Декаф Флэт Уайт</a>
                     </h3>
                     <p class="catalog__product-text">
                       Кофе без кофеина из Эфиопии с натуральным фермерским
@@ -709,6 +757,8 @@
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="16"
+                        role="img"
+                        aria-hidden="true"
                       >
                         <use xlink:href="#union-button" />
                       </svg>
@@ -718,31 +768,33 @@
                 </li>
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
-                    <picture>
-                      <source
-                        srcset="
-                          img/catalog/coffee-can-3.webp    1x,
-                          img/catalog/coffee-can-3@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        srcset="
-                          img/catalog/coffee-can-3.png    1x,
-                          img/catalog/coffee-can-3@2x.png 2x
-                        "
-                        src="img/catalog/coffee-can-3.png"
-                        alt="Декаф Флэт Уайт"
-                        width="130"
-                        height="180"
-                        loading="lazy"
-                        class="catalog__product-image"
-                      />
-                    </picture>
+                    <a href="#" title="Декаф Флэт Уайт.">
+                      <picture>
+                        <source
+                          srcset="
+                            img/catalog/coffee-can-3.webp    1x,
+                            img/catalog/coffee-can-3@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          srcset="
+                            img/catalog/coffee-can-3.png    1x,
+                            img/catalog/coffee-can-3@2x.png 2x
+                          "
+                          src="img/catalog/coffee-can-3.png"
+                          alt=""
+                          width="130"
+                          height="180"
+                          loading="lazy"
+                          class="catalog__product-image"
+                        />
+                      </picture>
+                    </a>
                   </header>
                   <article class="catalog__product-article">
                     <h3 class="catalog__product-title subtitle">
-                      Декаф Флэт Уайт
+                      <a href="#" title="Декаф Флэт Уайт.">Декаф Флэт Уайт</a>
                     </h3>
                     <p class="catalog__product-text">
                       Кофе без кофеина из Эфиопии с натуральным фермерским
@@ -760,6 +812,8 @@
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="16"
+                        role="img"
+                        aria-hidden="true"
                       >
                         <use xlink:href="#union-button" />
                       </svg>
@@ -769,31 +823,33 @@
                 </li>
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
-                    <picture>
-                      <source
-                        srcset="
-                          img/catalog/coffee-can-4.webp    1x,
-                          img/catalog/coffee-can-4@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        srcset="
-                          img/catalog/coffee-can-4.png    1x,
-                          img/catalog/coffee-can-4@2x.png 2x
-                        "
-                        src="img/catalog/coffee-can-4.png"
-                        alt="Декаф Флэт Уайт"
-                        width="130"
-                        height="180"
-                        loading="lazy"
-                        class="catalog__product-image"
-                      />
-                    </picture>
+                    <a href="#" title="Декаф Флэт Уайт.">
+                      <picture>
+                        <source
+                          srcset="
+                            img/catalog/coffee-can-4.webp    1x,
+                            img/catalog/coffee-can-4@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          srcset="
+                            img/catalog/coffee-can-4.png    1x,
+                            img/catalog/coffee-can-4@2x.png 2x
+                          "
+                          src="img/catalog/coffee-can-4.png"
+                          alt=""
+                          width="130"
+                          height="180"
+                          loading="lazy"
+                          class="catalog__product-image"
+                        />
+                      </picture>
+                    </a>
                   </header>
                   <article class="catalog__product-article">
                     <h3 class="catalog__product-title subtitle">
-                      Декаф Флэт Уайт
+                      <a href="#" title="Декаф Флэт Уайт.">Декаф Флэт Уайт</a>
                     </h3>
                     <p class="catalog__product-text">
                       Кофе без кофеина из Эфиопии с натуральным фермерским
@@ -811,6 +867,8 @@
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="16"
+                        role="img"
+                        aria-hidden="true"
                       >
                         <use xlink:href="#union-button" />
                       </svg>
@@ -820,31 +878,33 @@
                 </li>
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
-                    <picture>
-                      <source
-                        srcset="
-                          img/catalog/coffee-can-5.webp    1x,
-                          img/catalog/coffee-can-5@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        srcset="
-                          img/catalog/coffee-can-5.png    1x,
-                          img/catalog/coffee-can-5@2x.png 2x
-                        "
-                        src="img/catalog/coffee-can-5.png"
-                        alt="Декаф Флэт Уайт"
-                        width="130"
-                        height="180"
-                        loading="lazy"
-                        class="catalog__product-image"
-                      />
-                    </picture>
+                    <a href="#" title="Декаф Флэт Уайт.">
+                      <picture>
+                        <source
+                          srcset="
+                            img/catalog/coffee-can-5.webp    1x,
+                            img/catalog/coffee-can-5@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          srcset="
+                            img/catalog/coffee-can-5.png    1x,
+                            img/catalog/coffee-can-5@2x.png 2x
+                          "
+                          src="img/catalog/coffee-can-5.png"
+                          alt=""
+                          width="130"
+                          height="180"
+                          loading="lazy"
+                          class="catalog__product-image"
+                        />
+                      </picture>
+                    </a>
                   </header>
                   <article class="catalog__product-article">
                     <h3 class="catalog__product-title subtitle">
-                      Декаф Флэт Уайт
+                      <a href="#" title="Декаф Флэт Уайт.">Декаф Флэт Уайт</a>
                     </h3>
                     <p class="catalog__product-text">
                       Кофе без кофеина из Эфиопии с натуральным фермерским
@@ -862,6 +922,8 @@
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="16"
+                        role="img"
+                        aria-hidden="true"
                       >
                         <use xlink:href="#union-button" />
                       </svg>
@@ -871,31 +933,33 @@
                 </li>
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
-                    <picture>
-                      <source
-                        srcset="
-                          img/catalog/coffee-can-6.webp    1x,
-                          img/catalog/coffee-can-6@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        srcset="
-                          img/catalog/coffee-can-6.png    1x,
-                          img/catalog/coffee-can-6@2x.png 2x
-                        "
-                        src="img/catalog/coffee-can-6.png"
-                        alt="Декаф Флэт Уайт"
-                        width="130"
-                        height="180"
-                        loading="lazy"
-                        class="catalog__product-image"
-                      />
-                    </picture>
+                    <a href="#" title="Декаф Флэт Уайт.">
+                      <picture>
+                        <source
+                          srcset="
+                            img/catalog/coffee-can-6.webp    1x,
+                            img/catalog/coffee-can-6@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          srcset="
+                            img/catalog/coffee-can-6.png    1x,
+                            img/catalog/coffee-can-6@2x.png 2x
+                          "
+                          src="img/catalog/coffee-can-6.png"
+                          alt=""
+                          width="130"
+                          height="180"
+                          loading="lazy"
+                          class="catalog__product-image"
+                        />
+                      </picture>
+                    </a>
                   </header>
                   <article class="catalog__product-article">
                     <h3 class="catalog__product-title subtitle">
-                      Декаф Флэт Уайт
+                      <a href="#" title="Декаф Флэт Уайт.">Декаф Флэт Уайт</a>
                     </h3>
                     <p class="catalog__product-text">
                       Кофе без кофеина из Эфиопии с натуральным фермерским
@@ -913,6 +977,8 @@
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="16"
+                        role="img"
+                        aria-hidden="true"
                       >
                         <use xlink:href="#union-button" />
                       </svg>
@@ -928,7 +994,13 @@
               type="button"
               class="catalog__pagination-button button__pagination"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="10"
+                role="img"
+                aria-hidden="true"
+              >
                 <use xlink:href="#pagination-left" />
               </svg>
               <span>Назад</span>
@@ -954,7 +1026,13 @@
               type="button"
               class="catalog__pagination-button button__pagination"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="10"
+                role="img"
+                aria-hidden="true"
+              >
                 <use xlink:href="#pagination-right" />
               </svg>
               <span>Вперёд</span>
@@ -976,7 +1054,7 @@
             <div class="footer__logo-icons">
               <a
                 href="#"
-                title="Главная стринаца компании"
+                title="Главная стринаца компании."
                 class="footer__logo-link"
               >
                 <svg
@@ -984,6 +1062,8 @@
                   width="82"
                   height="36"
                   class="footer__logo-mobile"
+                  role="img"
+                  aria-label="Главная стринаца компании."
                 >
                   <use xlink:href="#logo-tablet" />
                 </svg>
@@ -992,6 +1072,8 @@
                   width="170"
                   height="36"
                   class="footer__logo-desktop"
+                  role="img"
+                  aria-label="Главная стринаца компании."
                 >
                   <use xlink:href="#logo-desktop" />
                 </svg>
@@ -1004,13 +1086,14 @@
               <a
                 href="https://vk.com/"
                 class="footer__icons-link"
-                title="Вконтакте"
+                title="Социальная сеть Вконтакте."
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   class="footer__social-icons-item"
+                  aria-hidden="true"
                 >
                   <use xlink:href="#vk" />
                 </svg>
@@ -1018,26 +1101,28 @@
               <a
                 href="https://ru.pinterest.com/"
                 class="footer__icons-link"
-                title="Pinterest"
+                title="Социальная сеть Pinterest."
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
                   class="footer__social-icons-item"
+                  aria-hidden="true"
                 >
                   <use xlink:href="#pinterest" />
                 </svg> </a
               ><a
                 href="https://ok.ru/"
                 class="footer__icons-link"
-                title="Одноклассники"
+                title="Социальная сеть Одноклассники."
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   class="footer__social-icons-item"
+                  aria-hidden="true"
                 >
                   <use xlink:href="#ok" />
                 </svg>
@@ -1095,9 +1180,16 @@
             </ul>
           </div>
           <div class="footer__developer">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer-link"
+            <a
+              href="https://htmlacademy.ru/intensive/adaptive"
+              class="footer__developer-link"
               >Разработано в HTML Academy
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="18"
+                aria-hidden="true"
+              >
                 <use xlink:href="#developer" />
               </svg>
             </a>
