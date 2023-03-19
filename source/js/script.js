@@ -66,3 +66,35 @@ if (sliderList.length > 0) {
     slider.style.backgroundColor = bgColor[count];
   }
 }
+
+// Яндекс карты
+ymaps.ready(init);
+const mapLocation = [59.96841540802588, 30.3174580363846];
+
+function init() {
+  let map = new ymaps.Map("ya-map", {
+    center: mapLocation,
+    zoom: 18,
+  });
+
+  let placemark = new ymaps.Placemark(
+    mapLocation,
+    {},
+    {
+      iconLayout: "default#image",
+      iconImageHref: "../img/icons/stack.svg#placemark",
+      iconImageSize: [38, 50],
+      iconImageOffset: [-4, -25]
+    }
+  );
+
+  map.controls.remove("geolocationControl"); // удаляем геолокацию
+  map.controls.remove("searchControl"); // удаляем поиск
+  map.controls.remove("trafficControl"); // удаляем контроль трафика
+  map.controls.remove("typeSelector"); // удаляем тип
+  map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+  map.controls.remove("zoomControl"); // удаляем контрол зуммирования
+  map.controls.remove("rulerControl"); // удаляем контрол правил
+
+  map.geoObjects.add(placemark);
+}

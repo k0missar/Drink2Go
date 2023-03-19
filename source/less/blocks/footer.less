@@ -1,0 +1,289 @@
+.footer {
+  padding-top: 22px;
+
+  @media (min-width: @width-tablet) {
+    padding-top: 40px;
+  }
+}
+
+.footer__content {
+  @media (min-width: @width-desktop) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+// НАЧИНАЮТСЯ ИКОНКИ
+.footer__icons {
+  margin-bottom: 18px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @width-tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-left: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.footer__logo-icons {
+  @media (min-width: @width-desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.footer__logo-link {
+  text-decoration: none;
+}
+
+.footer__logo-mobile {
+  @media (min-width: @width-tablet) {
+    display: none;
+  }
+}
+
+.footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @width-tablet) {
+    display: block;
+  }
+}
+
+.footer__logo-text {
+  display: none;
+
+  @media (min-width: @width-desktop) {
+    padding-top: 10px;
+    display: block;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: @color-base-black;
+  }
+}
+
+.footer__social-icons-list {
+  display: flex;
+  column-gap: 20px;
+
+  @media (min-width: @width-desktop) {
+    align-self: self-start;
+  }
+}
+
+.footer__icons-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: @color-base-secondary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: rgba(@color-base-primary-rgb, 0.25);
+  }
+}
+
+.footer__social-icons-item {
+  fill: @color-base-grey;
+}
+
+.footer__icons-link:hover svg,
+.footer__icons-link:focus svg {
+  fill: @color-base-primary;
+  outline: none;
+}
+
+.footer__icons-link:active svg {
+  fill: @color-base-primary;
+}
+
+// НАЧИНАЮТСЯ ФУТЕР МЕНЮ И КОНТАКТЫ
+.footer__navigation {
+  @media (min-width: @width-tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 252px);
+  }
+
+  @media (min-width: @width-desktop) {
+    grid-template-columns: repeat(3, 347px);
+  }
+}
+
+.footer__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: @color-base-primary;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+  border-top: 1px solid @color-base-secondary;
+
+  @media (min-width: @width-tablet) {
+    border-top: none;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-left: 42px;
+  }
+}
+
+.footer__list-item {
+  padding-top: 18px;
+
+  &:first-child {
+    @media (min-width: @width-desktop) {
+      padding-top: 7px;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 28px;
+  }
+
+  &--nopadding {
+    &:last-child {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.footer__menu-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: @color-base-black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @color-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    color: @color-primary-darker;
+  }
+}
+
+.footer__list-text {
+  padding-left: 19px;
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: @color-base-black;
+  text-decoration: none;
+
+  &--address::before {
+    content: "";
+    width: 13px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='16' fill='none'%3E%3Cpath fill='%237859CF' fill-rule='evenodd' d='M11.8 6.5c0 2.33-1.37 4.42-2.91 6.01a17.54 17.54 0 0 1-2.39 2.05 16.93 16.93 0 0 1-2.39-2.05C2.57 10.91 1.2 8.83 1.2 6.5a5.3 5.3 0 1 1 10.6 0Zm1.2 0c0 5.59-6.5 9.5-6.5 9.5S0 12.09 0 6.5a6.5 6.5 0 0 1 13 0Zm-4.2 0a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0Zm1.2 0a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--tel::before {
+    content: "";
+    width: 13px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='16' fill='none'%3E%3Cpath fill='%237859CF' fill-rule='evenodd' d='M1.48 1.49A2.7 2.7 0 0 0 .05 4.32L.4 6.09c.93 3.13 2.5 5.77 4.83 8.11l1.4 1.2c.86.72 2.17.8 3.24.2l2.23-1.25c.88-.49 1.17-1.53.63-2.26L10.8 9.5c-.52-.7-1.6-.82-2.37-.26l-1.38.99a5.23 5.23 0 0 1-2.17-3.67l1.56-.66c.9-.37 1.33-1.33.96-2.11L6.04.85C5.66.03 4.58-.25 3.7.25L1.48 1.48Zm-.2 2.53c-.12-.6.2-1.22.78-1.55L4.3 1.23c.22-.13.5-.06.59.15L6.24 4.3c.1.2-.02.43-.24.53L3.57 5.86l.02.42a6.28 6.28 0 0 0 3.07 5.16l.36.22 2.13-1.53c.2-.14.46-.11.59.06l1.93 2.61c.14.19.07.45-.15.57l-2.23 1.25c-.59.33-1.3.28-1.77-.12l-1.4-1.19A20.91 20.91 0 0 1 1.64 5.8l-.36-1.77Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+// НАЧИНАЮТСЯ КОПИРАЙТЫ
+.footer__developer {
+  padding-top: 19px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid @color-base-secondary;
+
+  @media (min-width: @width-tablet) {
+    padding-top: 9px;
+    border-top: none;
+  }
+
+  @media (min-width: @width-desktop) {
+    grid-column: 1/3;
+    padding-top: 0;
+  }
+}
+
+.footer__developer-link {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-base-grey;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @color-base-primary;
+    outline: none;
+  }
+
+  &:active {
+    color: @color-primary-darker;
+  }
+}
+
+.footer__developer-link svg {
+  fill: @color-base-grey;
+}
+
+.footer__developer-link:hover svg,
+.footer__developer-link:focus svg {
+  fill: @color-base-primary;
+}
+
+.footer__developer-link:active {
+  fill: @color-primary-darker;
+}

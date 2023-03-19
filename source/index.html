@@ -85,6 +85,7 @@
         </div>
       </div>
     </header>
+
     <main class="main">
       <section class="slider">
         <div class="wrapper">
@@ -436,7 +437,6 @@
                   </div>
                 </div>
               </fieldset>
-
               <fieldset class="catalog__filter-list">
                 <legend class="catalog__filter-title">Наличие молока</legend>
                 <div class="catalog__filter-item">
@@ -498,7 +498,6 @@
                   >
                 </div>
               </fieldset>
-
               <fieldset class="catalog__filter-list">
                 <legend class="catalog__filter-title">
                   Страна произростания
@@ -578,7 +577,6 @@
                   >
                 </div>
               </fieldset>
-
               <div class="catalog__filter-controls">
                 <button
                   type="submit"
@@ -594,7 +592,6 @@
                 </button>
               </div>
             </form>
-
             <div class="catalog__product">
               <form action="#" method="get" class="catalog__sorting">
                 <fieldset class="catalog__sorting-filter">
@@ -663,7 +660,6 @@
                     </button>
                   </footer>
                 </li>
-
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
                     <picture>
@@ -715,7 +711,6 @@
                     </button>
                   </footer>
                 </li>
-
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
                     <picture>
@@ -767,7 +762,6 @@
                     </button>
                   </footer>
                 </li>
-
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
                     <picture>
@@ -819,7 +813,6 @@
                     </button>
                   </footer>
                 </li>
-
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
                     <picture>
@@ -871,7 +864,6 @@
                     </button>
                   </footer>
                 </li>
-
                 <li class="catalog__product-item" tabindex="0">
                   <header class="catalog__product-header">
                     <picture>
@@ -926,9 +918,186 @@
               </ul>
             </div>
           </div>
+          <div class="catalog__pagination">
+            <button
+              type="button"
+              class="catalog__pagination-button button__pagination"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10">
+                <use xlink:href="#pagination-left" />
+              </svg>
+              <span>Назад</span>
+            </button>
+            <button
+              type="button"
+              class="catalog__pagination-button button__pagination"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              class="catalog__pagination-button button__pagination button__pagination--current"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              class="catalog__pagination-button button__pagination"
+            >
+              3</button
+            ><button
+              type="button"
+              class="catalog__pagination-button button__pagination"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10">
+                <use xlink:href="#pagination-right" />
+              </svg>
+              <span>Вперёд</span>
+            </button>
+          </div>
         </div>
       </section>
+
+      <section class="map">
+        <div id="ya-map" class="map__ya-map"></div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__content">
+          <div class="footer__icons">
+            <div class="footer__logo-icons">
+              <a href="#" alt="Главная стринаца компании" class="footer__logo-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="82"
+                  height="36"
+                  class="footer__logo-mobile"
+                >
+                  <use xlink:href="#logo-tablet" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="170"
+                  height="36"
+                  class="footer__logo-desktop"
+                >
+                  <use xlink:href="#logo-desktop" />
+                </svg>
+                <span class="footer__logo-text"
+                >Интернет-магазин кофейных напитков</span
+              >
+              </a>
+            </div>
+            <div class="footer__social-icons-list">
+              <a
+                href="https://vk.com/"
+                class="footer__icons-link"
+                alt="Вконтакте"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  class="footer__social-icons-item"
+                >
+                  <use xlink:href="#vk" />
+                </svg>
+              </a>
+              <a
+                href="https://ru.pinterest.com/"
+                class="footer__icons-link"
+                alt="Pinterest"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  class="footer__social-icons-item"
+                >
+                  <use xlink:href="#pinterest" />
+                </svg> </a
+              ><a
+                href="https://ok.ru/"
+                class="footer__icons-link"
+                alt="Одноклассники"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  class="footer__social-icons-item"
+                >
+                  <use xlink:href="#ok" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <h4 class="footer__title">Интернет-магазин</h4>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__menu-link">Каталог</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__menu-link">Доставка</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__menu-link">Способы оплаты</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__menu-link">О нас</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <h4 class="footer__title">Медиа</h4>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__menu-link">Блог</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__menu-link">Информация для сми</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__menu-link">Правовая информация</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <h4 class="footer__title">Контакты</h4>
+              </li>
+              <li
+                class="footer__list-item footer__list-text footer__list-text--address"
+              >
+                Санкт-Петербург, набережная реки Карповки, дом 5
+              </li>
+              <li class="footer__list-item footer__list-item--nopadding">
+                <a
+                  href="tel:+79999999999"
+                  class="footer__list-text footer__list-text--tel"
+                  >+7 (999) 999-99-99</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__developer">
+            <a href="https://htmlacademy.ru/" class="footer__developer-link"
+              >Разработано в HTML Academy
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <use xlink:href="#developer" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7a07c571-cf9c-4039-8e1a-6104ab924267&lang=ru_RU"></script>
+    <script src="./js/script.js"></script>
 
     <svg style="display: none">
       <symbol id="logo-mobile" viewBox="0 0 32 36" fill="none">
@@ -971,7 +1140,7 @@
           d="M2.65 9.2h7.94c1.84 0 3.48.34 4.9 1.03a7.77 7.77 0 0 1 3.31 2.93 8.25 8.25 0 0 1 1.18 4.44 7.77 7.77 0 0 1-4.49 7.37A11.12 11.12 0 0 1 10.6 26H2.65V9.2Zm7.75 13c1.44 0 2.6-.4 3.46-1.22a4.39 4.39 0 0 0 1.32-3.38c0-1.44-.44-2.57-1.32-3.38a4.83 4.83 0 0 0-3.46-1.23h-3v9.22h3Zm19.9-.66h-2.59V26h-4.75V9.2h7.68c1.52 0 2.84.26 3.96.77a5.77 5.77 0 0 1 2.6 2.16c.6.93.9 2.02.9 3.29 0 1.21-.29 2.28-.86 3.19-.56.9-1.37 1.6-2.43 2.11L38.44 26h-5.09l-3.05-4.46Zm3-6.12c0-.79-.25-1.4-.74-1.83-.5-.43-1.23-.65-2.2-.65H27.7v4.92h2.64c.98 0 1.71-.2 2.2-.62.5-.43.75-1.04.75-1.82Zm7.9-6.22h4.76V26H41.2V9.2Zm24.6 0V26H61.9l-7.42-8.95V26h-4.65V9.2h3.9l7.43 8.95V9.2h4.65Zm10.31 10.7-1.77 1.9V26h-4.7V9.2h4.7v6.98l6.5-6.98h5.23l-6.86 7.44L86.43 26h-5.52l-4.8-6.1Z"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 16 12" id="menu">
+      <symbol id="menu" fill="none" viewBox="0 0 16 12">
         <path
           fill="#333"
           fill-rule="evenodd"
@@ -979,7 +1148,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 16 16" id="union">
+      <symbol id="union" fill="none" viewBox="0 0 16 16">
         <path
           fill="#333"
           fill-rule="evenodd"
@@ -987,7 +1156,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 16 16" id="user">
+      <symbol id="user" fill="none" viewBox="0 0 16 16">
         <path
           fill="#333"
           fill-rule="evenodd"
@@ -995,7 +1164,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 12 12" id="cross">
+      <symbol id="cross" fill="none" viewBox="0 0 12 12">
         <path
           fill="#333"
           fill-rule="evenodd"
@@ -1003,7 +1172,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 52 56" id="speed">
+      <symbol id="speed" fill="none" viewBox="0 0 52 56">
         <path
           fill="#F0EBFF"
           fill-rule="evenodd"
@@ -1017,7 +1186,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 52 56" id="eco">
+      <symbol id="eco" fill="none" viewBox="0 0 52 56">
         <path
           fill="#F0EBFF"
           fill-rule="evenodd"
@@ -1031,7 +1200,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 52 56" id="convenience">
+      <symbol id="convenience" fill="none" viewBox="0 0 52 56">
         <path fill="#F0EBFF" d="M4 4h48l-4 44-20 8-20-8L4 4Z" />
         <path
           fill="#7859CF"
@@ -1040,7 +1209,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol fill="none" viewBox="0 0 52 56" id="vigor">
+      <symbol id="vigor" fill="none" viewBox="0 0 52 56">
         <path
           fill="#F0EBFF"
           fill-rule="evenodd"
@@ -1054,7 +1223,7 @@
           clip-rule="evenodd"
         />
       </symbol>
-      <symbol viewBox="0 0 20 16" fill="none" id="union-button">
+      <symbol id="union-button" viewBox="0 0 20 16" fill="none">
         <path
           fill="#fff"
           fill-rule="evenodd"
@@ -1062,7 +1231,82 @@
           clip-rule="evenodd"
         />
       </symbol>
+      <symbol id="pagination-left" viewBox="0 0 6 10" fill="none">
+        <path
+          fill="#7859CF"
+          fill-rule="evenodd"
+          d="M4.8 0 6 1.24 2.38 5 6 8.76 4.8 10 0 5l4.8-5Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="pagination-right" viewBox="0 0 6 10" fill="none">
+        <path
+          fill="#7859CF"
+          fill-rule="evenodd"
+          d="M1.2 0 0 1.24 3.62 5 0 8.76 1.2 10 6 5 1.2 0Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="placemark" viewBox="0 0 38 50" fill="none">
+        <ellipse
+          cx="19"
+          cy="48.5"
+          fill="#7859CF"
+          fill-opacity=".25"
+          rx="8"
+          ry="1.5"
+        />
+        <path
+          fill="#7859CF"
+          d="M38 20c0 15.05-19 24-19 24S0 35.05 0 20C0 8.95 8.5 0 19 0s19 8.95 19 20Z"
+        />
+        <path
+          fill="#fff"
+          fill-rule="evenodd"
+          d="M19 36c8.28 0 15-7.16 15-16S27.28 4 19 4C10.72 4 4 11.16 4 20s6.72 16 15 16Zm9.86-10.67C29.59 23.73 30 21.92 30 20c0-6.63-4.92-12-11-12-.85 0-1.67.1-2.46.3 3.8 1 6.59 4.37 6.59 8.37 0 3.1-1.75 6.15-3.44 8.66h9.17ZM14.19 10.67a6.1 6.1 0 0 1 6.19 6c0 3.8-3.02 7.46-5.44 10.4l-.75.93h13A10.6 10.6 0 0 1 19 32c-6.08 0-11-5.37-11-12 0-3.66 1.62-9.33 6.19-9.33Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="ok" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          d="M1.4 1.4C0 2.81 0 5.07 0 9.6v.91c0 4.46 0 6.7 1.4 8.09C2.81 20 5.07 20 9.6 20h.91c4.46 0 6.7 0 8.09-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.91c0-4.46 0-6.7-1.4-8.09C17.19 0 14.93 0 10.4 0h-.91C5.03 0 2.79 0 1.4 1.4Zm8.62 8.8A3.03 3.03 0 1 0 10 4.13a3.03 3.03 0 0 0 0 6.07Zm0-4.28a1.25 1.25 0 0 1 0 2.5c-.69 0-1.25-.56-1.25-1.25a1.23 1.23 0 0 1 1.25-1.25Zm1.21 6.76a5.73 5.73 0 0 0 1.76-.72.88.88 0 0 0 .28-1.24.88.88 0 0 0-1.24-.27 3.85 3.85 0 0 1-4.08 0 .9.9 0 0 0-1.23.27.9.9 0 0 0 .3 1.22c.55.34 1.15.58 1.77.72L7.1 14.35a.89.89 0 0 0 0 1.25c.18.18.4.25.63.25.24 0 .46-.09.64-.25l1.67-1.67 1.67 1.67a.89.89 0 0 0 1.25-1.25l-1.73-1.67Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="pinterest" viewBox="0 0 22 22">
+        <path
+          d="M11 0a11 11 0 0 0-4 21.25c-.1-.87-.2-2.21.03-3.16l1.29-5.47s-.33-.66-.33-1.63c0-1.53.89-2.67 2-2.67.93 0 1.38.7 1.38 1.54 0 .95-.6 2.36-.9 3.67-.27 1.1.54 1.99 1.62 1.99 1.96 0 3.46-2.07 3.46-5.04 0-2.64-1.9-4.48-4.6-4.48A4.76 4.76 0 0 0 6 10.78c0 .94.36 1.96.82 2.5.09.12.1.21.07.32l-.3 1.25c-.05.2-.16.24-.37.15-1.38-.64-2.23-2.65-2.23-4.26 0-3.47 2.52-6.66 7.26-6.66 3.82 0 6.78 2.72 6.78 6.35 0 3.8-2.39 6.84-5.7 6.84-1.12 0-2.17-.58-2.52-1.26l-.69 2.62a12.3 12.3 0 0 1-1.37 2.88A11 11 0 1 0 11 0Z"
+        />
+      </symbol>
+      <symbol id="vk" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          d="M1.4 1.4C0 2.82 0 5.08 0 9.6v.8c0 4.53 0 6.79 1.4 8.2C2.82 20 5.08 20 9.6 20h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2C17.18 0 14.92 0 10.4 0h-.8C5.07 0 2.81 0 1.4 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3H8.75v5.77c-1.33-.33-3.02-1.95-3.1-5.77H3.39Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="location" viewBox="0 0 13 16" fill="none">
+        <path
+          fill="#7859CF"
+          fill-rule="evenodd"
+          d="M11.8 6.5c0 2.33-1.37 4.42-2.91 6.01a17.54 17.54 0 0 1-2.39 2.05 16.93 16.93 0 0 1-2.39-2.05C2.57 10.91 1.2 8.83 1.2 6.5a5.3 5.3 0 1 1 10.6 0Zm1.2 0c0 5.59-6.5 9.5-6.5 9.5S0 12.09 0 6.5a6.5 6.5 0 0 1 13 0Zm-4.2 0a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0Zm1.2 0a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="telefon" viewBox="0 0 13 16" fill="none">
+        <path
+          fill="#7859CF"
+          fill-rule="evenodd"
+          d="M1.48 1.49A2.7 2.7 0 0 0 .05 4.32L.4 6.09c.93 3.13 2.5 5.77 4.83 8.11l1.4 1.2c.86.72 2.17.8 3.24.2l2.23-1.25c.88-.49 1.17-1.53.63-2.26L10.8 9.5c-.52-.7-1.6-.82-2.37-.26l-1.38.99a5.23 5.23 0 0 1-2.17-3.67l1.56-.66c.9-.37 1.33-1.33.96-2.11L6.04.85C5.66.03 4.58-.25 3.7.25L1.48 1.48Zm-.2 2.53c-.12-.6.2-1.22.78-1.55L4.3 1.23c.22-.13.5-.06.59.15L6.24 4.3c.1.2-.02.43-.24.53L3.57 5.86l.02.42a6.28 6.28 0 0 0 3.07 5.16l.36.22 2.13-1.53c.2-.14.46-.11.59.06l1.93 2.61c.14.19.07.45-.15.57l-2.23 1.25c-.59.33-1.3.28-1.77-.12l-1.4-1.19A20.91 20.91 0 0 1 1.64 5.8l-.36-1.77Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="developer" viewBox="0 0 12 16">
+        <path
+          d="M11.22 5.75 5.97 2.5.78 5.75V1.41L6 .83l5.22.58v4.34Zm0 .58-2.1 1.3-3.14-1.97v.57L8.66 7.9l-.46.29-2.22-1.4v.58l1.75 1.1-.41.29H7.3l-1.33-.82v.58l.87.53-.89.56L.8 6.4 5.97 3.1l5.24 3.22Zm0 5.44L6 15.04.78 11.77V7.03l5.2 3.25v.59L2.43 8.64v.57L6 11.47v.6L2.43 9.85v.57L6 12.67l3.6-2.27V7.96l1.62-1.01v4.82ZM6 0 0 .66v11.58L6 16l6-3.76V.66L6 0Z"
+        />
+      </symbol>
     </svg>
-    <script src="./js/script.js" defer></script>
   </body>
 </html>
