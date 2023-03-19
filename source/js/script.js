@@ -12,6 +12,8 @@ if (mainMenu) {
 }
 
 // Слайдер
+// Для того чтобы добавить новый слайд нужно добавить элемент в html - сам слайд и кнопку,
+//в скрипт его цвет в массив bgColor
 const slider = document.querySelector(".slider");
 const sliderList = slider.querySelectorAll(".slider__item"); // Список слайдов
 
@@ -84,7 +86,7 @@ function init() {
       iconLayout: "default#image",
       iconImageHref: "../img/icons/stack.svg#placemark",
       iconImageSize: [38, 50],
-      iconImageOffset: [-4, -25]
+      iconImageOffset: [-4, -25],
     }
   );
 
