@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" />
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" />
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" />
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" />
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
@@ -17,36 +23,27 @@
               title="Логотип интернет-магазина."
               aria-label="Логотип интернет-магазина."
             >
-              <svg
-                class="navbar__logo-mobile"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="36"
-                role="img"
-                aria-label="Логотип интернет-магазина."
-              >
-                <use xlink:href="#logo-mobile" />
-              </svg>
-              <svg
-                class="navbar__logo-tablet"
-                xmlns="http://www.w3.org/2000/svg"
-                width="82"
-                height="36"
-                role="img"
-                aria-label="Логотип интернет-магазина."
-              >
-                <use xlink:href="#logo-tablet" />
-              </svg>
-              <svg
-                class="navbar__logo-desktop"
-                xmlns="http://www.w3.org/2000/svg"
-                width="170"
-                height="36"
-                role="img"
-                aria-label="Логотип интернет-магазина."
-              >
-                <use xlink:href="#logo-desktop" />
-              </svg>
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="img/icons/stack.svg#logo-desktop"
+                  width="170"
+                  height="36"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/icons/stack.svg#logo-tablet"
+                  width="82"
+                  height="36"
+                />
+                <img
+                  src="img/icons/stack.svg#logo-mobile"
+                  alt="Логотип интернет-магазина."
+                  width="32"
+                  height="36"
+                  class="navbar__logo-image"
+                />
+              </picture>
               <span class="navbar__logo-text"
                 >Интернет-магазин кофейных напитков</span
               >
@@ -1057,26 +1054,20 @@
                 title="Главная стринаца компании."
                 class="footer__logo-link"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="82"
-                  height="36"
-                  class="footer__logo-mobile"
-                  role="img"
-                  aria-label="Главная стринаца компании."
-                >
-                  <use xlink:href="#logo-tablet" />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="170"
-                  height="36"
-                  class="footer__logo-desktop"
-                  role="img"
-                  aria-label="Главная стринаца компании."
-                >
-                  <use xlink:href="#logo-desktop" />
-                </svg>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/icons/stack.svg#logo-desktop"
+                    width="170"
+                    height="36"
+                  />
+                  <img
+                    src="img/icons/stack.svg#logo-tablet"
+                    alt="Главная стринаца компании."
+                    width="82"
+                    height="36"
+                  />
+                </picture>
                 <span class="footer__logo-text"
                   >Интернет-магазин кофейных напитков</span
                 >

@@ -281,8 +281,7 @@
   outline: none;
 }
 
-.catalog__filter-input[type="radio"]:checked
-  + .catalog__filter-label--radio::before {
+.catalog__filter-input[type="radio"]:checked + .catalog__filter-label--radio::before {
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='9' fill='%237859CF'/%3E%3C/svg%3E");
   background-size: 16px 16px;
@@ -291,8 +290,7 @@
   border-color: @color-base-primary;
 }
 
-.catalog__filter-input[type="radio"][disabled][checked]
-  + .catalog__filter-label--radio::before {
+.catalog__filter-input[type="radio"][disabled][checked] + .catalog__filter-label--radio::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='9' fill='%23E2E2E2'/%3E%3C/svg%3E");
   background-size: 16px 16px;
   background-position: center center;
@@ -304,8 +302,7 @@
 }
 
 // Стилицация input checkbox
-.catalog__filter-input[type="checkbox"]:checked
-  + .catalog__filter-label--checkbox::before {
+.catalog__filter-input[type="checkbox"]:checked + .catalog__filter-label--checkbox::before {
   background-color: @color-base-primary;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='9' fill='%23ffffff'/%3E%3C/svg%3E");
   background-size: 20px 20px;
@@ -318,13 +315,11 @@
   background-color: rgba(@color-base-primary-rgb, 0.25);
 }
 
-.catalog__filter-input[type="checkbox"]:disabled
-  + .catalog__filter-label::before {
+.catalog__filter-input[type="checkbox"]:disabled + .catalog__filter-label::before {
   background-color: @color-light-grey;
 }
 
-.catalog__filter-input[type="checkbox"][disabled][checked]
-  + .catalog__filter-label::before {
+.catalog__filter-input[type="checkbox"][disabled][checked] + .catalog__filter-label::before {
   background-color: @color-light-grey;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='9' fill='%23bdbdbd'/%3E%3C/svg%3E");
   background-size: 20px 20px;
@@ -499,7 +494,7 @@
 
     @media (min-width: @width-desktop) {
       pointer-events: painted;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
       outline: none;
     }
   }
