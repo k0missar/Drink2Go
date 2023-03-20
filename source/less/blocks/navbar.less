@@ -8,12 +8,18 @@
   @media (min-width: @width-tablet) {
     padding-left: 20px;
     grid-template-columns: max-content 1fr max-content;
-    grid-template-rows: 80px auto;
+    grid-template-rows: auto;
   }
 
   @media (min-width: @width-desktop) {
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+
+.navbar__logo {
+  @media (min-width: @width-tablet) {
+    height: 80px;
   }
 }
 

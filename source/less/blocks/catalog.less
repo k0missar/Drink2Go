@@ -446,7 +446,7 @@
 }
 
 .catalog__sorting-select option {
-  padding: 8px 20px;
+  //padding: 8px 20px;
   font-family: "Montserrat", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -454,6 +454,16 @@
   line-height: 24px;
   color: @color-base-black;
   background-color: @color-base-white;
+
+  &:checked {
+    background-color: @color-base-primary;
+    color: @color-base-white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @color-base-secondary;
+  }
 }
 
 .catalog__product-list {
